@@ -41,7 +41,7 @@ echo ${last_version}
 
 timestamp=$(date +%s)
 cat <<EOF > $work_root/last_version
-{"ver":1,"csv_md5":"${csv_md5}","timestamp":${timestamp},"BE.7z":"${BE_md5}","LE.7z":"${LE_md5}"}
+{"ver":${last_version},"csv_md5":"${csv_md5}","timestamp":${timestamp},"BE.7z":"${BE_md5}","LE.7z":"${LE_md5}"}
 EOF
 cat <<EOF
 updated,Please upstream to github
